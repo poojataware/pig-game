@@ -10,6 +10,8 @@ GAME RULES:
 */
 
 var scores, roundScore, activePlayer, dice;
+var sound;
+
 init();
 
 document.querySelector('.btn-roll').addEventListener('click', function () {
@@ -81,7 +83,7 @@ function init() {
     scores = [0, 0];
     roundScore = 0;
     activePlayer = 0;
-    var sound = document.getElementById('sound');
+    sound = document.getElementById('sound');
     sound.play();
     document.querySelector('.btn-roll').disabled = false;
     document.querySelector('.dice').style.display = 'none';
@@ -100,7 +102,7 @@ function init() {
 }
 
 
-//while(document.querySelector('.btn-new').addEventListener('click'));
+
 
 
 
